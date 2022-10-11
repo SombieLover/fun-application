@@ -20,7 +20,11 @@ const hour = minute * 60;
 async function bootstrap() {
 	const app = await NestFactory.create<NestExpressApplication>(AppModule, {
 		cors: {
-			origin: [process.env.APP_DOMAIN],
+			origin: [
+				process.env.APP_DOMAIN,
+				'http://localhost',
+				'http://localhost:4200',
+			],
 		},
 	});
 	const globalPrefix = 'api';

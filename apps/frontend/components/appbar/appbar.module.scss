@@ -1,0 +1,20 @@
+.appBar {
+    background-color: rgba(65, 18, 207, 0.719);
+    padding: 3rem;
+    box-shadow: rgb(150 150 150 / 0.75) 0px 10px 10px 0px;
+    & > h1, h2, p {
+        text-shadow: #333 0 0 10px;
+    }
+    margin-bottom: 2rem;
+}
+
+.accountButton {
+    cursor: pointer;
+    transition: background-color ease-in-out 0.3s;
+    border: 2px solid #fefefe;
+    background-color: #13acfe;
+    border-radius: 25px;
+    &:hover {
+        background-color: rgb(125 35 50 / 0.75);
+    }
+}

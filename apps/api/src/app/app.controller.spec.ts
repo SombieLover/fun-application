@@ -4,8 +4,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import { UserModule } from './user/user.module';
-import { ListModule } from './list/list.module';
-import { ListItemModule } from './list-item/list-item.module';
+import { ListModule } from './todo/list/list.module';
+import { ListItemModule } from './todo/list-item/list-item.module';
 
 describe('AppController', () => {
 	let app: TestingModule;
